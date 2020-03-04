@@ -1,12 +1,12 @@
 .App {
   text-align: center;
-  background-color: #282c34;
+  background: black;  /* fallback for old browsers */
+
   /*background-color: darkviolet;*/
   color: white;
 }
 
 .App-header {
-  background-color: #282c34;
   /*min-height: 100vh;*/
   min-height: 400px;
   display: flex;
@@ -33,6 +33,7 @@
 .description {
   font-weight: 100;
   padding: 20px 10px;
+  
 }
 
 .project-container {
@@ -52,12 +53,26 @@
   width: 60%;
 }
 
-.presentation-avatar {
-  height: 30vmin;
+.presentation-flag {
+  height: 8vmin;
   pointer-events: none;
 }
 
-.presentation-flag {
-  height: 5vmin;
-  pointer-events: none;
+.texto-inicio{
+  font-size: 75px;
+  text-align: right;
+  font-weight: 700;
+  line-height: 60px;
+  
+}
+.perfil{
+  background-image: url("assets/avatar.png");
+  /* background-size: cover;
+  background-position: center; */
+}
+.content-end{
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
 }

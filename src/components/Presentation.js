@@ -4,14 +4,19 @@ export default class Presentation extends Component {
     render() {
         const { flag, avatar, name, roll, description } = this.props;
 
-        return(
+        return (
+            
             <div className="">
-                <img src={avatar} className="rounded-full mx-auto presentation-avatar" />
-                <div className="">
-                    <img src={flag} className="rounded-full mx-auto presentation-flag" />
-                    <h1 className="text-md">{name}</h1>
+                {/* <img src={avatar} className="rounded-full mx-auto presentation-avatar" /> */}
+                <div className=" bg-no-repeat bg-auto perfil mb-1 ">
+                    <h1 className="texto-inicio ">Hola.</h1>
+                    <h1 className="texto-inicio">Soy</h1>
+                    <h1 className="texto-inicio">{name}</h1>
                 </div>
-                <h2 className="text-lg text-purple-500">{roll}</h2>
+                <div className=" content-end">
+                    <h2 className="text-lg text-red-500  text-right">{roll}</h2>
+                  {/* <img src={flag} className="rounded-full presentation-flag " /> */}
+                </div>
                 <h3 className="text-sm description">{description}</h3>
             </div>
         );
